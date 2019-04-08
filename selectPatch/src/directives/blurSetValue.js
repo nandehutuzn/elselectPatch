@@ -13,7 +13,7 @@ export default {
                     return
                 }
 
-                selectedLabelVDom.$emit('input', this.query)
+                selectedLabelVDom && selectedLabelVDom.$emit('input', this.query)
                 this.query = ''
             }
         }
